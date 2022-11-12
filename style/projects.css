@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+/* font-family: "Share Tech Mono",  */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+/* font-family: "Raleway", serif !important; */
+
+
+/* mycss */
+body,
+.bg {
+    line-height: 1;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Share Tech Mono", sans-serif;
+    background-repeat: no-repeat;
+    background-color: #3d3d3d;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-color {
+    border-bottom: 1px solid #0044ff;
+    -webkit-animation: navbaranimate 2s ease infinite;
+    animation: navbaranimate 20s ease infinite;
+    z-index: 1;
+    /* backdrop-filter: blur(100px); */
+}
+
+
+
+.navbar>.container {
+    transition: all 0.8s ease;
+}
+
+.text-banner,
+.nav-list-color,
+a {
+    color: #fff38f;
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-lists :focus,
+.nav-lists :hover {
+    color: #fff38f;
+    animation-name: wave-animation-nav;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    display: inline-block;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 12px;
+    background-color: #fff38f;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.navbar-toggler {
+    border: none !important;
+    color: rgba(250, 248, 248, 0);
+}
+
+.title-head {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff38f;
+    text-align: center;
+    position: relative;
+    padding: 0 0 20px;
+    font-family: "Raleway", serif !important;
+    font-weight: 400;
+}
+
+.title-head::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 15%;
+    border-radius: 2px;
+    background-color: #0044ff;
+    font-family: "Raleway", serif !important;}
+
+.card {
+    max-width: 460px!important;
+    margin: 0 auto;
+}
+
+
+@keyframes wave-animation-nav {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes navbaranimate {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

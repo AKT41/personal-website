@@ -1,0 +1,329 @@
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+/* font-family: "Share Tech Mono",  */
+
+/* mycss */
+body,
+.bg {
+  line-height: 1;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Share Tech Mono", monospace;
+  /* font-family: 'Roboto', sans-serif; */
+  /* background-color: white; */
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  /* bg */
+  width: 100%;
+  height: 100vh;
+  /* background-size: 300% 300%; */
+  /* background-image: linear-gradient(-45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  -webkit-animation: bganimate 20s ease infinite;
+  animation: bganimate 20s ease infinite; */
+  background-image: url("../images/home-bg.webp");
+  color: #0003b9;
+  animation: bganimate 300s ease infinite;
+
+
+}
+
+.navbar-color {
+  background: transparent;
+  /* backdrop-filter: blur(3px); */
+  background-image: linear-gradient(-45deg, #2168976c 0%, #08b8af63 25%, #7922226e 45%, #d541275d 100%);
+  background-size: 400% 400%;
+  -webkit-animation: navbaranimate 2s ease infinite;
+  animation: navbaranimate 20s ease infinite;
+  backdrop-filter:  blur(1px);
+  transition: all 2s ease;
+}
+
+.text-banner,
+.nav-list-color,
+a {
+  color: var(--color-light-blue);
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-lists :focus,
+.nav-lists :hover {
+  color: #00a8c5;
+  animation-name: wave-animation-nav;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {                                                 
+  content: '';                                                 
+  position: absolute;                                                 
+  width: 75%;                                                 
+  transform: scaleX(0);                                                 
+  height: 3px;                                                 
+  bottom: 0;                                                 
+  left: 12px;                                                 
+  background-color: #00a8c5;                                                 
+  transform-origin: bottom right;                                                 
+  transition: transform 0.25s ease-out;                                                 
+}                                                 
+                                                 
+.hover-underline-animation:hover:after {                                                 
+  transform: scaleX(1);                                                 
+  transform-origin: bottom left;                                                 
+}                                                 
+                                                 
+.hidden {                                                 
+  opacity: 0;                                                 
+}                                                 
+                                                 
+.console-container {                                                 
+  font-family: 'Share Tech Mono', monospace;                                                 
+  font-size: 3.5rem;                                                 
+  text-align: center;                                                 
+  display: inline;                                                 
+  color: white;                                                 
+  position: relative;                                                 
+  top: 3rem;                                                 
+  left: 5rem;                                                 
+}                                                 
+                                                 
+.console-underscore {                                                 
+  display: inline-block;                                                 
+  position: relative;                                                 
+  top: -0.14em;                                                 
+  left: 10px;                                                 
+  color: #fec544;                                                 
+}                                                 
+                                                 
+.wave {                                                 
+  animation-name: wave-animation;                                                 
+  animation-duration: 2.5s;                                                 
+  animation-iteration-count: infinite;                                                 
+  transform-origin: 70% 70%;                                                 
+  display: inline-block;                                                 
+}                                                 
+
+.navbar>.container{
+  transition: all 0.8s ease;
+}
+                                      
+.navbar-toggler {                                                 
+  border: none !important;                   
+  color: rgba(250, 248, 248, 0);    
+                                               
+}                                                 
+
+.info-akt {
+  top: 8rem;
+  font-size: 3.4rem;
+}
+
+
+/* For mobile devices */
+@media screen and (max-width: 1000px) {
+ 
+  .hover-underline-animation:after {
+    content: '';
+    background-color: rgba(255, 0, 0, 0); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .console-container {
+    font-size: 3rem;
+    top: 5rem;
+    left: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .console-container {
+    font-size: 2.7rem;
+    top: 7rem;
+    left: 1rem;
+  }  
+}
+
+@media screen and (max-width: 500px) {
+  .console-container {
+    font-size: 2.35rem;
+    top: 7rem;
+    left: 1rem;
+  } 
+}
+
+@media screen and (max-width: 480px) {
+  .console-container {
+    font-size: 2rem;
+    top: 6rem;
+    left: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .console-container {
+    font-size: 1.8rem;
+    top: 5rem;
+    left: 1rem;
+  }
+}
+
+
+/* Animations */
+
+@keyframes wave-animation-nav {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+@-webkit-keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+
+@-webkit-keyframes bganimate {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bganimate {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes navbaranimate {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

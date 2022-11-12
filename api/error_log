@@ -1,0 +1,24 @@
+[11-Nov-2022 22:32:37 UTC] PHP Warning:  Undefined variable $config in /home4/kursadsp/akt/personal-website/api/contact.php on line 5
+[11-Nov-2022 22:32:37 UTC] PHP Warning:  Attempt to read property "bot_token" on null in /home4/kursadsp/akt/personal-website/api/contact.php on line 5
+[11-Nov-2022 22:32:37 UTC] PHP Warning:  Undefined variable $config in /home4/kursadsp/akt/personal-website/api/contact.php on line 6
+[11-Nov-2022 22:32:37 UTC] PHP Warning:  Attempt to read property "tg_user_id" on null in /home4/kursadsp/akt/personal-website/api/contact.php on line 6
+[11-Nov-2022 22:32:38 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot/sendMessage?chat_id=&amp;text=Name%3A+dsadasd%0AEmail%3A+dsadasd%0ASubject%3A+sadsadsa%0A%0AMessage%3A+dsadasdsdad&amp;parse_mode=Markdown): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kursadsp/akt/personal-website/api/contact.php on line 11
+[11-Nov-2022 22:34:44 UTC] PHP Warning:  Undefined variable $config in /home4/kursadsp/akt/personal-website/api/contact.php on line 6
+[11-Nov-2022 22:34:44 UTC] PHP Warning:  Attempt to read property "bot_token" on null in /home4/kursadsp/akt/personal-website/api/contact.php on line 6
+[11-Nov-2022 22:34:44 UTC] PHP Warning:  Undefined variable $config in /home4/kursadsp/akt/personal-website/api/contact.php on line 7
+[11-Nov-2022 22:34:44 UTC] PHP Warning:  Attempt to read property "tg_user_id" on null in /home4/kursadsp/akt/personal-website/api/contact.php on line 7
+[11-Nov-2022 22:34:44 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot/sendMessage?chat_id=&amp;text=Name%3A+test%0AEmail%3A+test%0ASubject%3A+test%0A%0AMessage%3A+test&amp;parse_mode=Markdown): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kursadsp/akt/personal-website/api/contact.php on line 12
+[11-Nov-2022 22:37:00 UTC] PHP Warning:  Undefined variable $config in /home4/kursadsp/akt/personal-website/api/contact.php on line 7
+[11-Nov-2022 22:37:00 UTC] PHP Warning:  Attempt to read property "bot_token" on null in /home4/kursadsp/akt/personal-website/api/contact.php on line 7
+[11-Nov-2022 22:37:00 UTC] PHP Warning:  Undefined variable $config in /home4/kursadsp/akt/personal-website/api/contact.php on line 8
+[11-Nov-2022 22:37:00 UTC] PHP Warning:  Attempt to read property "tg_user_id" on null in /home4/kursadsp/akt/personal-website/api/contact.php on line 8
+[11-Nov-2022 22:37:01 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot/sendMessage?chat_id=&amp;text=Name%3A+test%0AEmail%3A+test%0ASubject%3A+test%0A%0AMessage%3A+test&amp;parse_mode=Markdown): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kursadsp/akt/personal-website/api/contact.php on line 13
+[11-Nov-2022 22:37:20 UTC] PHP Warning:  Undefined variable $config in /home4/kursadsp/akt/personal-website/api/contact.php on line 7
+[11-Nov-2022 22:37:20 UTC] PHP Warning:  Attempt to read property "bot_token" on null in /home4/kursadsp/akt/personal-website/api/contact.php on line 7
+[11-Nov-2022 22:37:20 UTC] PHP Warning:  Undefined variable $config in /home4/kursadsp/akt/personal-website/api/contact.php on line 8
+[11-Nov-2022 22:37:20 UTC] PHP Warning:  Attempt to read property "tg_user_id" on null in /home4/kursadsp/akt/personal-website/api/contact.php on line 8
+[11-Nov-2022 22:37:20 UTC] PHP Warning:  file_get_contents(https://api.telegram.org/bot/sendMessage?chat_id=&amp;text=Name%3A+test%0AEmail%3A+test%0ASubject%3A+test%0A%0AMessage%3A+test&amp;parse_mode=Markdown): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home4/kursadsp/akt/personal-website/api/contact.php on line 13
