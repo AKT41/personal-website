@@ -89,7 +89,7 @@ html {
     /* background: linear-gradient(-45deg, #18dcff, #7158e2); */
     /* background-image: linear-gradient(-45deg, #3ae374 0%, #ff4d4d 25%, #7d5fff 51%, #ff9f1a 100%); */
     /* animation: bganimate 30s ease infinite; */
-    background: radial-gradient(ellipse at bottom, #0d040f 0%, #000000 100%);
+    background: radial-gradient(ellipse at bottom, #000 0%, #000000 100%);
     /* height: 100%;
     background-position: center;
     background-repeat: no-repeat; */
@@ -510,7 +510,7 @@ textarea:focus {
 /* Background Stars Animation */
 html {
     height: 100vh;
-    background: radial-gradient(ellipse at bottom, #0d040f 0%, #000000 100%);
+    background: radial-gradient(ellipse at bottom, #000 0%, #000000 100%);
     /* overflow: hidden; */
 }
 
